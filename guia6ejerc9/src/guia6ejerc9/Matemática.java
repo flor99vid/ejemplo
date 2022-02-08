@@ -44,35 +44,38 @@ public class Matemática {
     public void setNum2(double num2) {
         this.num2 = num2;
     }
-    public double devolverMayor(){
+    public void devolverMayor(){
         
+        System.out.printf("el mayor de los números es %.2f.\n",Math.max(num1, num2));
+        
+    }
+    public double calcularPotencia(){
         if (this.num1>this.num2){
-            return this.num1;
-        }else
-            return this.num2;
-        
-    }
-    public void calcularPotencia(){
-        if (this.num1>this.num2)
-        
-                    
-                    
-            
+            return Math.pow(num1, num2);   
+        }else{
+            return Math.pow(num2, num1);
         }
+            
         
     }
     
-    public void calcularRaiz (){
+    public double calcularRaiz (){
+        if (this.num1<this.num2){
+            return Math.sqrt(Math.abs(this.num1));
+        }else{
+            return Math.sqrt(Math.abs(this.num2));
+        }
+  
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 }
+
+    
+    
+    
+    
+    
+    
+    
+

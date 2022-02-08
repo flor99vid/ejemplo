@@ -28,11 +28,12 @@ public class Principal {
         Matemática numeros=new Matemática();
      
         
-        numeros.setNum1(Math.random()*20);
-        numeros.setNum2(Math.random()*20);
-        
-        System.out.printf("el mayor valor es: %.2f\n",numeros.devolverMayor());
-        
+        numeros.setNum1(Math.random()*11);
+        numeros.setNum2(Math.random()*11);
+        System.out.printf("el valor del número 1 es: %.2f y el del numero 2 es: %.2f \n", numeros.getNum1(),numeros.getNum2());
+        numeros.devolverMayor();
+        System.out.printf("la potencia del mayor número elevado al menor es: %f\n", numeros.calcularPotencia());
+        System.out.printf("la raiz cuadrada del menor número es: %f \n",numeros.calcularRaiz());
         
         
     }
